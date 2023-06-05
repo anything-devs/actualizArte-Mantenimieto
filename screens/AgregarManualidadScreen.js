@@ -102,14 +102,7 @@ const AgregarManualidadScreen = () => {
 
     const handleSelection = (id) => {
         const listaActualizada = materiasPrimas.map((matPrima) => {
-            if( matPrima.obj.getId === id) {
-                return {
-                    obj: matPrima.obj,
-                    seleccionado: !matPrima.seleccionado
-                };
-            } else {
-                return matPrima;
-            };
+            matPrima.obj.getId === id ? { ...matPrima, seleccionado: !matPrima.seleccionado } : matPrima;
         });
         setMateriasPrimas(listaActualizada); 
 

@@ -7,7 +7,18 @@ class Proveedor {
       this._direccion = direccion;
       this._correo = correo;
     }
-  
+
+    static createFromData(id, data) {
+      return new Proveedor(
+        id,
+        data.nit,
+        data.nombre,
+        data.telefono,
+        data.direccion,
+        data.correo
+      );
+    }
+      
     get getId() {return this._id;}
     get getNit() {return this._nit;}
     get getNombre() {return this._nombre;}
