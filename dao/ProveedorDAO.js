@@ -14,9 +14,7 @@ class ProveedorDAO {
         const ref = doc(FIRESTORE_DB, `Proveedor/${Id}`);
         const documento = await getDoc(ref);
         const datos = documento.data()
-        const proveedor = new Proveedor(documento.id, datos.nit, datos.nombre, 
-            datos.telefono, datos.direccion, datos.correo);
-        return proveedor;
+        return Proveedor.createFromData(documento.id, datos);
     }
 
     // Método para insertar un producto en Firebase
@@ -28,11 +26,7 @@ class ProveedorDAO {
             direccion: proveedor.getDireccion.direccion,
             correo: proveedor.getCorreo.correo,
         });
-        return new Proveedor(docRef.id, proveedor.getNit.nit,
-            proveedor.getNombre.nombre,
-            proveedor.getTelefono.telefono,
-            proveedor.getDireccion.direccion,
-            proveedor.getCorreo.correo,);
+        return Proveedor.createFromData(docRef.id, proveedor);
     }
 
     // Método para actualizar un producto en Firebase
@@ -52,6 +46,7 @@ class ProveedorDAO {
         const ref = doc(FIRESTORE_DB, `Proveedor/${proveedor.getId}`);
         await deleteDoc(ref);
     }
+    
 }
   
 export { ProveedorDAO }

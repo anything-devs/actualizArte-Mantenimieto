@@ -46,14 +46,16 @@ const VentaScreen = () => {
   //guardado de la venta nueva en la base
   const GuardarVenta = async () => {
     const options = await getOption();
-    if (options.productosList){
-      try {
-        const nuevaVenta = generacionNuevaVenta(options);
-        await VentaDAO.insertarNuevaVenta(nuevaVenta.toObject());
-        navigation.goBack();
-      } catch (error) {
-        console.error(error);
-      }
+    if (!options.productosList){
+      return;
+    }
+
+    try {
+      const nuevaVenta = generacionNuevaVenta(options);
+      await VentaDAO.insertarNuevaVenta(nuevaVenta.toObject());
+      navigation.goBack();
+    } catch (error) {
+      console.error(error);
     }
   };
 
