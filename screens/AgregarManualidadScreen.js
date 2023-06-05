@@ -1,5 +1,6 @@
-import { View, Text, Modal, TextInput,
-     Picker, TouchableOpacity, Image, ScrollView, CheckBox, Alert } from "react-native";
+import { View, Text, Modal, TextInput, TouchableOpacity, Image, ScrollView, Alert } from "react-native";
+import {CheckBox} from '@react-native-community/checkbox';
+import {Picker} from '@react-native-picker/picker';
 import React, { useEffect, useState } from "react";
 import { imageFunctions } from "../generalFunctions/imageFunctions";
 import { CategoriaDAO } from "../dao/CategoriaDAO";
