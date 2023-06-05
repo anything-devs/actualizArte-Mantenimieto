@@ -16,3 +16,17 @@ Software diseñado con el fin de brindar una solución a ciertas dificultades y 
 ### 3. Ejecutar el proyecto
 
 - Este se ejecuta con el comando `npm run android`
+
+## Como ejecutar en Windows
+
+### 1. Se ejecuta el emulador
+
+- Se ejecuta el emulador de android studio
+
+### 2. Instalar los paquetes necesarios del proyecto
+
+- Luego de haber ingresado a la carpeta del proyecto ejecutar `npm install` y esperar que instale los paquetes necesarios para ejecutar el proyecto
+
+### 3. Ejecutar el proyecto
+
+- Este se ejecuta con el comando `npm run android`
