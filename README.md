@@ -30,3 +30,9 @@ Software diseñado con el fin de brindar una solución a ciertas dificultades y 
 ### 3. Ejecutar el proyecto
 
 - Este se ejecuta con el comando `npm run android`
+
+---
+
+## Datos de prueba
+
+- No se pueden realizar datos de prueba ya que el backend se encuentra en `Firebase` y no se puden crear datos de prueba sin tener acceso a la plataforma
