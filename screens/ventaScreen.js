@@ -112,6 +112,10 @@ const VentaScreen = () => {
     return cleanedDict;
   }
 
+  /**
+   * Método que calcula el precio total de la venta a partir de los productos a vender 
+   * y actualiza el estado "precioVenta" con el valor calculado.
+   */
   const calcularPrecioVenta = () => {
     let total = 0;
     for (let i in productosAVender) {

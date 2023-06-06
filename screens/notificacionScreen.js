@@ -19,7 +19,10 @@ Notifications.scheduleNotificationAsync({
 });
 
 
-
+/**
+ * Método que muestra una alerta con un título y contenido personalizados cuando se presiona el botón.
+ * @returns {React.Element} Componente de pantalla de notificación.
+*/
 export default function notificacionScreen() {
   const showAlert = () => {
     Alert.alert(
