@@ -2,7 +2,7 @@
 
 Software diseñado con el fin de brindar una solución a ciertas dificultades y oportunidades presentadas en la empresa Tradición de artesanías y manualidades.
 
-## Como ejecutar en Linux
+## Cómo ejecutar en Linux
 
 ### 1. Agregar el path del JDK de Android Estudio al path
 
@@ -17,7 +17,7 @@ Software diseñado con el fin de brindar una solución a ciertas dificultades y 
 
 - Este se ejecuta con el comando `npm run android`
 
-## Como ejecutar en Windows
+## Cómo ejecutar en Windows
 
 ### 1. Se ejecuta el emulador
 
