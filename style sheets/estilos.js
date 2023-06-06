@@ -3,70 +3,66 @@ import { StyleSheet, Dimensions, Platform } from "react-native";
 const windowWidth = Dimensions.get("window").width;
 
 const estilos = StyleSheet.create({
-  
-  botonHome:{
-    color:"#eabf7b",
+  botonHome: {
+    color: "#eabf7b",
     backgroundColor: "#eabf7b",
     borderRadius: 5,
     padding: 10,
     marginBottom: 10,
   },
- 
+
   container: {
     flex: 1,
-    alignItems: 'center',
+    alignItems: "center",
     backgroundColor: "#f2e1c6",
-    padding:35,
-    width: '100%',
+    padding: 35,
+    width: "100%",
   },
   containerCheck: {
     flex: 1,
-    alignItems: 'center',
+    alignItems: "center",
     backgroundColor: "#f2e1c6",
-    padding:10,
-    width: '100%',
+    padding: 10,
+    width: "100%",
   },
-  check:{
-    alignItems: 'center',
-    padding:10
+  check: {
+    alignItems: "center",
+    padding: 10,
   },
-  picker:{
+  picker: {
     flex: 1,
     backgroundColor: "#f2e1c6",
-    padding:10,
-    marginBottom:10
+    padding: 10,
+    marginBottom: 10,
   },
   containerOptions: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: 'blue',
-    padding:10,
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "blue",
+    padding: 10,
     marginBottom: 20,
-    paddingHorizontal:10,
+    paddingHorizontal: 10,
     width: "100%",
-    justifyContent: 'space-between',
+    justifyContent: "space-between",
   },
-  containerAccionesEnListas:{
-    justifyContent: 'center',
-    alignItems: 'center',
-    alignContent: 'center',
-    flexDirection: 'row',
+  containerAccionesEnListas: {
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center",
+    flexDirection: "row",
     marginBottom: 10,
-    backgroundColor: '#f2f2f2',
-    width:'35%',
-    
-
-    
+    backgroundColor: "#f2f2f2",
+    width: "35%",
   },
   containerScrollView: {
     flex: 1,
     padding: 35,
-    backgroundColor:"#f2e1c6",
-},
-  botonesEnListas:{
+    backgroundColor: "#f2e1c6",
+  },
+  botonesEnListas: {
     flexDirection: "row",
     alignItems: "baseline",
-    backgroundColor: 'grey',
+    backgroundColor: "grey",
     paddingHorizontal: 5,
     marginBottom: 5,
   },
@@ -87,36 +83,32 @@ const estilos = StyleSheet.create({
     height: 40,
     borderColor: "black",
     borderWidth: 1,
-    textAlign: 'center',
+    textAlign: "center",
     marginBottom: 20,
-    
-      
-  
   },
-  
-  botonesAgregarQuitar:{
 
-  },
+  botonesAgregarQuitar: {},
   inputCantidades: {
     height: "25%",
     width: "25%",
-    alignItems: 'center',
+    alignItems: "center",
     borderColor: "black",
     borderWidth: 1,
     marginBottom: 20,
     padding: 2,
   },
   button: {
-    color:"gray",
+    color: "gray",
     padding: 10,
     borderRadius: 5,
     width: "40%",
     maxWidth: 400,
   },
   buttonText: {
+    // Primera advertencia
     color: "BLACK",
     fontWeight: "bold",
-    textAlign: 'center',
+    textAlign: "center",
   },
   totalText: {
     fontSize: 20,
@@ -132,13 +124,13 @@ const estilos = StyleSheet.create({
   item: {
     padding: 16,
     borderBottomWidth: 1,
-    borderBottomColor: '#ccc',
+    borderBottomColor: "#ccc",
   },
   textItems: {
     fontSize: 22,
   },
   view: {
-    backgroundColor:"#f4c67f",
+    backgroundColor: "#f4c67f",
     flex: 1,
     paddingBottom: 20,
     paddingLeft: 15,
